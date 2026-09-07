@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:40px;
+        }
+
+        input{
+            padding:8px;
+            width:250px;
+        }
+
+        button{
+            padding:8px 15px;
+            margin-left:5px;
+        }
+
+        ul{
+            margin-top:20px;
+        }
+
+        li{
+            margin:8px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My To-Do List</h1>
+
+    <form id="taskForm">
+        <input type="text" id="taskInput" placeholder="Enter a task" required>
+        <button type="submit">Add Task</button>
+    </form>
+
+    <br>
+
+    <button onclick="clearTasks()">Clear All</button>
+
+    <ul id="taskList"></ul>
+
+<script>
+
+let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+
+displayTasks();
+
+document.getElementById("taskForm").addEventListener("submit", function(event){
+
+    event.preventDefault();
+
+    let task = document.getElementById("taskInput").value;
+
+    tasks.push(task);
+
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+
+    document.getElementById("taskInput").value = "";
+
+    displayTasks();
+
+});
+
+function displayTasks(){
+
+    let list = document.getElementById("taskList");
+
+    list.innerHTML = "";
+
+    tasks.forEach(function(task){
+
+        let li = document.createElement("li");
+
+        li.textContent = task;
+
+        list.appendChild(li);
+
+    });
+
+}
+
+function clearTasks(){
+
+    tasks = [];
+
+    localStorage.removeItem("tasks");
+
+    displayTasks();
+
+}
+
+</script>
+
+</body>
+</html>
+    
+</body>
+</html>

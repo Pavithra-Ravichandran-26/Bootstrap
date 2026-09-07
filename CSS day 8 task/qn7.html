@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Grow</title>
+    <style>
+        .navbar{
+            display:flex;
+            background-color: aquamarine;
+            gap: 20px;
+            padding: 10px;
+        }
+        .nav{
+            background-color: blue;
+            color: black;
+            text-align: center;
+        }
+        .home, .about, .contact{
+            flex-grow:1 ;
+        }
+        .service{
+            flex-grow: 3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+    <div class="nav home">Home</div>
+    <div class="nav about">About</div>
+    <div class="nav service">Service</div>
+    <div class="nav contact">Contact</div>
+    </div>
+</body>
+</html>

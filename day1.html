@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            width: 800px;
+            border: 2px solid black;
+            background-color: aqua;
+            padding: 10px;
+            
+        }
+        .menu {
+            display:flex;
+            gap: 50px;
+             }
+             a{
+                text-decoration: none;
+             }
+             .toggle{
+                display:none;
+             }
+             @media(max-width:577Px){
+                nav{
+            width: 600px;
+            border: 2px solid black;
+            background-color: aqua;
+            padding: 10px;
+         }
+        
+         .toggle{
+                display:block;
+             }
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Service</a>
+        <a href="#">Contact</a>
+        </div>
+        <button class="toggle">☰</button>
+        
+    </nav>
+</body> 
+</html>

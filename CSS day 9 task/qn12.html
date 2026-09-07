@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query for mobile and desktop</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .box {
+            background-color:blue;
+            border: 2px solid black;
+            padding: 30px;
+            text-align: center;
+        }
+        @media (min-width: 600px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 900px) {
+            .container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">HTML</div>
+        <div class="box">CSS</div>
+        <div class="box">Bootstrap</div>
+        <div class="box">JavaScript</div>
+        <div class="box">React</div>
+        <div class="box">Python</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border box</title>
+    <style>
+        .borderbox{
+            width: 200px;
+            height: 150px;
+            border:10px solid black;
+            padding: 10px;
+            background-color: lightcyan;
+            color: black;
+            margin-bottom: 30px;
+        }
+        .contentbox{
+            width: 200px;
+            height: 150px;
+            border: 10px solid black;
+            padding:10px;
+            background-color:lightpink;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="borderbox">
+        box-sizing: border-box changes how the total width and height of an HTML element are calculated by including the padding and border within the specified dimensions.
+    </div>
+    <div class="contentbox">
+        A content box is the core inner part of an HTML element where text and images appear, and it is also the default value for the CSS box-sizing property where specified widths and heights apply only to that inner content area.
+    </div>
+    
+</body>
+</html>

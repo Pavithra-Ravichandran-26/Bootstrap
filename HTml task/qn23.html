@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page with Animated SVG Logo</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            text-align:center;
+        }
+
+        header{
+            background:#0077cc;
+            color:white;
+            padding:20px;
+        }
+
+        main{
+            padding:40px;
+        }
+
+        h2{
+            margin:20px 0;
+            color:#333;
+        }
+
+        p{
+            color:#555;
+            margin-bottom:20px;
+        }
+
+        button{
+            background:#0077cc;
+            color:white;
+            border:none;
+            padding:12px 25px;
+            border-radius:5px;
+            cursor:pointer;
+            font-size:16px;
+        }
+
+        button:hover{
+            background:#005fa3;
+        }
+
+        footer{
+            background:#333;
+            color:white;
+            padding:15px;
+            margin-top:40px;
+        }
+
+        /* SVG Animations */
+        .circle{
+            animation: pulse 2s infinite;
+        }
+
+        .rect{
+            animation: rotateRect 4s linear infinite;
+            transform-origin:center;
+        }
+
+        .logo-text{
+            animation: fadeText 2s infinite alternate;
+        }
+
+        @keyframes pulse{
+            0%{
+                r:35;
+                fill:#00bfff;
+            }
+            50%{
+                r:42;
+                fill:#00ff99;
+            }
+            100%{
+                r:35;
+                fill:#00bfff;
+            }
+        }
+
+        @keyframes rotateRect{
+            from{
+                transform:rotate(0deg);
+            }
+            to{
+                transform:rotate(360deg);
+            }
+        }
+
+        @keyframes fadeText{
+            from{
+                opacity:0.5;
+            }
+            to{
+                opacity:1;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+<header>
+    <h1>My Landing Page</h1>
+</header>
+
+<main>
+
+    <!-- SVG Logo -->
+    <svg width="250" height="200">
+
+        <!-- Circle -->
+        <circle class="circle"
+                cx="125"
+                cy="80"
+                r="35"
+                fill="#00bfff"/>
+
+        <!-- Rectangle -->
+        <rect class="rect"
+              x="95"
+              y="50"
+              width="60"
+              height="60"
+              fill="none"
+              stroke="#ff6600"
+              stroke-width="4"/>
+
+        <!-- Text -->
+        <text class="logo-text"
+              x="125"
+              y="160"
+              text-anchor="middle"
+              font-size="24"
+              font-weight="bold"
+              fill="#333">
+            MY LOGO
+        </text>
+
+    </svg>
+
+    <h2>Welcome to Our Website</h2>
+
+    <p>
+        We build modern, responsive, and user-friendly websites
+        using HTML, CSS, JavaScript, and SVG graphics.
+    </p>
+
+    <button>Get Started</button>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 My Landing Page. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+</html>

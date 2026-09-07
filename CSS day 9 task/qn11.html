@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo gallery</title>
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 150px 150px;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border: 2px solid black;
+        }
+        .gallery img:hover{
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gallery">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/047/842/674/small/black-forest-cake-with-chocolate-sponge-cake-cherries-and-whipped-cream-png.png" alt="Photo 1">
+        <img src="https://www.fnp.com/images/pr/l/v20221107183515/cute-panda-chocolate-cake_1.jpg" alt="Photo 2">
+        <img src="https://img.magnific.com/free-psd/delicious-chocolate-cake-topped-with-fresh-berries_632498-25316.jpg?semt=ais_test_b&w=740&q=80" alt="Photo 3">
+        <img src="https://whipped.in/cdn/shop/files/WhatsAppImage2023-12-12at11.29.28PM_1080x.jpg?v=1748459537" alt="Photo 4">
+        <img src="https://img.tatacliq.com/images/i30/437Wx649H/MP000000025244806_437Wx649H_202602130229041.jpeg" alt="Photo 5">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAH7-s8HgD4FT47ofzlzzyTv5bjslVBD23u_KdAGcy9jzJLvJhcqB5in0b&s=10" alt="Photo 6">
+    </div>
+
+</body>
+</html>
+    

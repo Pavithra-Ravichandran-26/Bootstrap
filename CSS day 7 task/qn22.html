@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space evenly</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+            border: 2px solid black;
+            padding: 20px;
+        }
+
+        .card {
+            width: 200px;
+            padding: 20px;
+            background-color: lightblue;
+            border: 2px solid blue;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: green;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+     <div class="card">
+        <h2>Vannila</h2>
+        <p class="price">र350/500g</p>
+        <button>Order Now</button>
+    </div>
+    <div class="card">
+        <h2>Chocolate</h2>
+        <p class="price">र400/500g</p>
+        <button>Order Now</button>
+    </div>
+    <div class="card">
+        <h2>Butterscotch</h2>
+        <p class="price">र500/500g</p>
+        <button>Order Now</button>
+    </div>
+</div>
+</body>
+</html>

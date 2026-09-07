@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic News Website Structure</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            line-height:1.6;
+        }
+
+        header{
+            background:#1a1a1a;
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
+
+        nav{
+            background:#333;
+            padding:12px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+        }
+
+        .container{
+            display:flex;
+            margin:20px;
+            gap:20px;
+        }
+
+        main{
+            flex:3;
+            background:white;
+            padding:20px;
+            border-radius:8px;
+        }
+
+        aside{
+            flex:1;
+            background:white;
+            padding:20px;
+            border-radius:8px;
+        }
+
+        section{
+            margin-bottom:30px;
+        }
+
+        article{
+            background:#f9f9f9;
+            padding:15px;
+            margin-top:15px;
+            border-left:5px solid #0077cc;
+        }
+
+        h2{
+            color:#0077cc;
+            margin-bottom:10px;
+        }
+
+        footer{
+            background:#1a1a1a;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:20px;
+        }
+
+        ul{
+            margin-left:20px;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:20px;
+        }
+
+        table,th,td{
+            border:1px solid black;
+        }
+
+        th,td{
+            padding:10px;
+            text-align:left;
+        }
+
+        th{
+            background:#0077cc;
+            color:white;
+        }
+    </style>
+
+</head>
+<body>
+
+<header>
+    <h1>Semantic HTML in News Websites</h1>
+    <p>Example based on CNN.com and BBC.com</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">World</a>
+    <a href="#">Business</a>
+    <a href="#">Technology</a>
+    <a href="#">Sports</a>
+</nav>
+
+<div class="container">
+
+<main>
+
+<section>
+    <h2>Top Stories</h2>
+
+    <article>
+        <h3>Breaking News</h3>
+        <p>
+            Individual news stories are wrapped inside
+            <strong>&lt;article&gt;</strong> because they can stand alone,
+            be shared, or viewed independently.
+        </p>
+    </article>
+
+    <article>
+        <h3>Technology News</h3>
+        <p>
+            CNN and BBC typically use separate articles for each news card
+            displayed on their homepage.
+        </p>
+    </article>
+</section>
+
+<section>
+    <h2>Semantic Tags Found</h2>
+
+    <table>
+        <tr>
+            <th>Tag</th>
+            <th>Usage</th>
+        </tr>
+
+        <tr>
+            <td>&lt;header&gt;</td>
+            <td>Contains website logo and title.</td>
+        </tr>
+
+        <tr>
+            <td>&lt;nav&gt;</td>
+            <td>Contains navigation links like Home, World, Business, Sports.</td>
+        </tr>
+
+        <tr>
+            <td>&lt;main&gt;</td>
+            <td>Contains the primary news content.</td>
+        </tr>
+
+        <tr>
+            <td>&lt;section&gt;</td>
+            <td>Groups news into categories such as World, Business, Technology, and Sports.</td>
+        </tr>
+
+        <tr>
+            <td>&lt;article&gt;</td>
+            <td>Represents each individual news story.</td>
+        </tr>
+
+        <tr>
+            <td>&lt;aside&gt;</td>
+            <td>Displays related news, trending stories, or advertisements.</td>
+        </tr>
+
+        <tr>
+            <td>&lt;footer&gt;</td>
+            <td>Contains copyright and policy links.</td>
+        </tr>
+    </table>
+
+</section>
+
+<section>
+    <h2>Conclusion</h2>
+
+    <p>
+        CNN.com and BBC.com both use semantic HTML elements to organize their
+        webpages. Navigation menus are placed inside
+        <strong>&lt;nav&gt;</strong>, news stories inside
+        <strong>&lt;article&gt;</strong>, categories inside
+        <strong>&lt;section&gt;</strong>, related content inside
+        <strong>&lt;aside&gt;</strong>, and copyright information inside
+        <strong>&lt;footer&gt;</strong>. This structure improves SEO,
+        accessibility, and code readability.
+    </p>
+
+</section>
+
+</main>
+
+<aside>
+
+<h2>Related Content</h2>
+
+<ul>
+    <li>Most Read Articles</li>
+    <li>Trending News</li>
+    <li>Latest Videos</li>
+    <li>Editor's Picks</li>
+    <li>Weather Updates</li>
+</ul>
+
+<p style="margin-top:20px;">
+This sidebar represents how CNN and BBC use the
+<strong>&lt;aside&gt;</strong> element to display supporting content that is
+related to, but separate from, the main news articles.
+</p>
+
+</aside>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Semantic HTML News Website Example</p>
+</footer>
+
+</body>
+</html>
+</html>
