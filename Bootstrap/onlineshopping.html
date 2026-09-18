@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Product Page</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">🛍️ Super Shopee</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categories">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cart">Cart <span id="cart-count" class="badge bg-success">0</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#login">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5" id="home">
+        <h1 class="text-center text-primary">Welcome to Super Shopee</h1>
+        <p class="text-center">Your one-stop destination for all your shopping needs. Explore our wide range of products and enjoy a seamless shopping experience!</p>
+      <div class="container mt-5" id="products">
+
+        <h1 class="text-center text-primary mb-4">
+             Products
+        </h1>
+
+        <div class="row g-4">
+
+            
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card h-100">
+
+                    <img
+                        src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQAt9i7XEqUoR0clWZukRWVtqii2zcGmmjezfdS2agwgRZFHdv4gUAvmyX8gSsU3Qa9CoTUCI1wVcBpv-nG7g-Z0bFuA8AgwRIydc9kvVOb9FLDxeQJqkS6cnp9HU9wKGnyzQgwvXlnTQ&usqp=CAc"
+                        class="card-img-top"
+                        alt="Laptop"
+                         width="100px"
+                        height="200px">
+
+                    <div class="card-body text-center">
+
+                        <h5 class="card-title">Laptop</h5>
+
+                        <p class="card-text">₹55,000</p>
+                        <p class="text-warning mb-3" aria-label="4.5 out of 5 stars">★★★★★ <small class="text-muted">4.5</small></p>
+
+                        <button class="btn btn-success add-to-cart" data-product="Laptop">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-primary">Buy Now</button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card h-100">
+
+                    <img
+                        src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQcHqia63M845__DTD8gV10qNV1RuYZvZiwqfkEi4lzgtw5taD0xAD51MYT0Pay4hLybxbYlD-cIFXhoRWNgk8FppoVsdieHGCgmXgZ_DdIkSHzAYAYQwrYj8_O-Aqrvojl3Z8FfQ&usqp=CAc"
+                        class="card-img-top"
+                        alt="Smartphone"
+                         width="100px"
+                        height="200px">
+
+                    <div class="card-body text-center">
+
+                        <h5 class="card-title">Smartphone</h5>
+
+                        <p class="card-text">₹25,000</p>
+                        <p class="text-warning mb-3" aria-label="4.6 out of 5 stars">★★★★★ <small class="text-muted">4.6</small></p>
+
+                        <button class="btn btn-success add-to-cart" data-product="Smartphone">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-primary">Buy Now</button>
+
+                    </div>
+                </div>
+            </div>
+
+
+           
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card h-100">
+
+                    <img
+                        src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSYr7cqB5vZUd7OF6qDjAGcmG_4r7uqKBkVB6uw9ulS0-dHVuPH0FM9mkkypyEoTDqFWopNaujjMY9xJeDJyG0fxYa3n86y-RKp_tgKLFX8UoXoEO8_pD0sgzavETzPtw&usqp=CAc"
+                        class="card-img-top"
+                        alt="Headphones"
+                         width="100px"
+                        height="200px">
+
+                    <div class="card-body text-center">
+
+                        <h5 class="card-title">Headphones</h5>
+
+                        <p class="card-text">₹2,500</p>
+                        <p class="text-warning mb-3" aria-label="4.4 out of 5 stars">★★★★★ <small class="text-muted">4.4</small></p>
+
+                        <button class="btn btn-success add-to-cart" data-product="Headphones">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-primary">Buy Now</button>
+
+                    </div>
+                </div>
+            </div>
+
+
+           
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card h-100">
+
+                    <img
+                        src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTY3adGpJAk2eLGVatusRWJRdAR-3qCuV5T4vc03dLMTsrJqh9mrjYF3WuW95i-VGyDDysQUOS5Z4jEZ6u2WcOCY026DMUDVTUDwdLM-1HTH5_ueGCfvSlDKw&usqp=CAc"
+                        class="card-img-top"
+                        alt="Smart Watch"
+                         width="100px"
+                        height="200px">
+
+                    <div class="card-body text-center">
+
+                        <h5 class="card-title">Smart Watch</h5>
+
+                        <p class="card-text">₹4,500</p>
+                        <p class="text-warning mb-3" aria-label="4.3 out of 5 stars">★★★★★ <small class="text-muted">4.3</small></p>
+
+                        <button class="btn btn-success add-to-cart" data-product="Smart Watch">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-primary">Buy Now</button>
+
+                    </div>
+                </div>
+            </div>
+
+
+          
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card h-100">
+
+                    <img
+                        src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTC0HyYFhvUUa185TpWaRcKdTMzXVSATuNuLcb3dxpyOzdeCp10x5zXBOKPkKSQkdZ-2Idk30p-hTgEccFOIRjRLJDOyBgaUOsrPnnYC1oiamn4KAuUBHZjV5ByYleByAf83WTaPSM&usqp=CAc"
+                        class="card-img-top"
+                        alt="Backpack"
+                        width="100px"
+                        height="200px">
+
+
+                    <div class="card-body text-center">
+
+                        <h5 class="card-title">Backpack</h5>
+
+                        <p class="card-text">₹1,200</p>
+                        <p class="text-warning mb-3" aria-label="4.7 out of 5 stars">★★★★★ <small class="text-muted">4.7</small></p>
+
+                        <button class="btn btn-success add-to-cart" data-product="Backpack">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-primary">Buy Now</button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card h-100">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyjnLOIPQE96m1l14A9KyaQoywCXb3LTddUpIq0TVofw&s=10"
+                        class="card-img-top"
+                        alt="Shoes"
+                        width="100px"
+                        height="200px">
+
+                    <div class="card-body text-center">
+
+                        <h5 class="card-title">Running Shoes</h5>
+
+                        <p class="card-text">₹3,000</p>
+                        <p class="text-warning mb-3" aria-label="4.5 out of 5 stars">★★★★★ <small class="text-muted">4.5</small></p>
+
+                        <button class="btn btn-success add-to-cart" data-product="Running Shoes">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-primary">Buy Now</button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card h-100">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZQwAQCq2BSpaiDXMMGA1iW7jgcTU2hzsflaFnWPudYg&s=10"
+                        class="card-img-top"
+                        alt="Camera"
+                        width="100px"
+                        height="200px">
+
+                    <div class="card-body text-center">
+
+                        <h5 class="card-title">Camera</h5>
+
+                        <p class="card-text">₹45,000</p>
+                        <p class="text-warning mb-3" aria-label="4.2 out of 5 stars">★★★★★ <small class="text-muted">4.2</small></p>
+
+                        <button class="btn btn-success add-to-cart" data-product="Camera">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-primary">Buy Now</button>
+
+                    </div>
+                </div>
+            </div>
+
+
+           
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card h-100">
+
+                    <img
+                        src="https://media.geeksforgeeks.org/wp-content/uploads/20250717125823393786/WhatsApp-Image-2023-09-16-at-73037-PM.jpeg"
+                        class="card-img-top"
+                        alt="Keyboard"
+                        width="100px"
+                        height="200px">
+
+                    <div class="card-body text-center">
+
+                        <h5 class="card-title">Keyboard</h5>
+
+                        <p class="card-text">₹1,800</p>
+                        <p class="text-warning mb-3" aria-label="4.1 out of 5 stars">★★★★★ <small class="text-muted">4.1</small></p>
+
+                        <button class="btn btn-success add-to-cart" data-product="Keyboard">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-primary">Buy Now</button>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container mt-5" id="login">
+
+    <div class="card mx-auto" style="width: 100%; max-width: 400px;">
+        <div class="card-body">
+
+            <h2 class="text-center">Login</h2>
+
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control">
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                    Login
+                </button>
+            </form>
+
+        </div>
+    </div>
+
+</div>
+
+
+  
+</body>
+</html>
