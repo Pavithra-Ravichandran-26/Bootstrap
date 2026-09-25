@@ -16,6 +16,16 @@
 
         body {
             background-color: #f5f9fc;
+            padding-top: 56px;
+            scroll-behavior: smooth;
+        }
+
+        .topfixed {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 1030;
         }
 
         .hero {
@@ -62,36 +72,44 @@
 
     <!-- ================= NAVBAR ================= -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark topfixed">
 
         <div class="container">
 
-            <a class="navbar-brand fw-bold" href="#">
+            <a class="navbar-brand fw-bold" href="#home">
                 ✈️ TravelGo
             </a>
 
-            <div class="navbar-nav ms-auto">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar" aria-controls="mainNavbar"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <a class="nav-link" href="#">
-                    Home
-                </a>
+            <div id="mainNavbar" class="collapse navbar-collapse">
+                <div class="navbar-nav ms-auto">
 
-                <a class="nav-link" href="#">
-                    Destinations
-                </a>
+                    <a class="nav-link" href="#home">
+                        Home
+                    </a>
 
-                <a class="nav-link" href="#">
-                    Packages
-                </a>
+                    <a class="nav-link" href="#destinations">
+                        Destinations
+                    </a>
 
-                <a class="nav-link" href="#">
-                    About
-                </a>
+                    <a class="nav-link" href="#packages">
+                        Packages
+                    </a>
 
-                <a class="nav-link" href="#">
-                    Contact
-                </a>
+                    <a class="nav-link" href="#about">
+                        About
+                    </a>
 
+                    <a class="nav-link" href="#contact">
+                        Contact
+                    </a>
+
+                </div>
             </div>
 
         </div>
@@ -101,7 +119,7 @@
 
     <!-- ================= HERO ================= -->
 
-    <section class="hero">
+    <section id="home" class="hero">
 
         <div class="container">
 
@@ -113,9 +131,9 @@
                 Discover beautiful destinations and unforgettable experiences.
             </p>
 
-            <button class="btn btn-warning">
+            <a class="btn btn-warning" href="#packages">
                 Explore Packages
-            </button>
+            </a>
 
         </div>
 
@@ -124,9 +142,9 @@
 
     <!-- ================= DESTINATIONS ================= -->
 
-    <section class="container py-5">
+    <section id="destinations" class="container py-5">
 
-        <h2 class="text-center fw-bold mb-5">
+        <h2 id="packages" class="text-center fw-bold mb-5">
             Popular Destinations
         </h2>
 
@@ -385,6 +403,38 @@
     </section>
 
 
+    <!-- ================= ABOUT AND CONTACT ================= -->
+
+    <section id="about" class="container py-5">
+
+        <div class="row g-4">
+
+            <div class="col-lg-6">
+
+                <h2 class="fw-bold">About TravelGo</h2>
+
+                <p>
+                    TravelGo helps you discover memorable destinations and plan
+                    comfortable, exciting journeys around the world.
+                </p>
+
+            </div>
+
+            <div id="contact" class="col-lg-6">
+
+                <h2 class="fw-bold">Contact Us</h2>
+
+                <p class="mb-2"><strong>Email:</strong> hello@travelgo.com</p>
+                <p class="mb-2"><strong>Phone:</strong> +91 98765 43210</p>
+                <p class="mb-0"><strong>Address:</strong> 21 MG Road, Bengaluru, India</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
     <!-- ================= FOOTER ================= -->
 
     <footer class="bg-dark text-white text-center py-4">
@@ -395,6 +445,7 @@
 
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
