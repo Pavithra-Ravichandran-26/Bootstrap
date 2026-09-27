@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CodeMaster Academy</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="bg-gray-900 text-white sticky top-0 z-50 shadow-lg">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+
+                <!-- Logo -->
+                <a href="#home"
+                    class="text-2xl font-bold text-blue-400 text-center sm:text-left">
+                    🎓 CodeMaster
+                </a>
+
+                <!-- Navigation -->
+                <div class="flex flex-wrap justify-center gap-4 sm:gap-6 mt-4 sm:mt-0">
+
+                    <a href="#home"
+                        class="hover:text-blue-400 transition duration-300">
+                        Home
+                    </a>
+
+                    <a href="#courses"
+                        class="hover:text-blue-400 transition duration-300">
+                        Courses
+                    </a>
+
+                    <a href="#trainers"
+                        class="hover:text-blue-400 transition duration-300">
+                        Trainers
+                    </a>
+
+                    <a href="#why-us"
+                        class="hover:text-blue-400 transition duration-300">
+                        Why Us
+                    </a>
+
+                    <a href="#contact"
+                        class="hover:text-blue-400 transition duration-300">
+                        Contact
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= HERO / HOME ================= -->
+    <section id="home"
+        class="bg-blue-600 text-white text-center px-4 py-16 sm:py-20 md:py-24 lg:py-28">
+
+        <div class="max-w-4xl mx-auto">
+
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                Learn Full Stack Development
+            </h1>
+
+            <p class="text-base sm:text-lg md:text-xl text-blue-100 mb-8">
+                Build modern websites and powerful applications with
+                HTML, CSS, JavaScript, React, Python and Django.
+            </p>
+
+            <a href="#courses"
+                class="inline-block bg-white text-blue-600 font-bold px-6 py-3 rounded-lg shadow-md
+                hover:bg-gray-200 hover:scale-105 transition duration-300">
+                Enroll Now
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= COURSES ================= -->
+    <section id="courses"
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+
+        <div class="text-center mb-10">
+
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">
+                Our Courses
+            </h2>
+
+            <p class="mt-3 text-gray-600">
+                Choose the course that matches your career goals.
+            </p>
+
+        </div>
+
+
+        <!-- Course Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+
+            <!-- Course 1 -->
+            <div
+                class="bg-white rounded-xl shadow-md p-6
+                hover:shadow-2xl hover:-translate-y-2
+                transition duration-300">
+
+                <div class="text-4xl mb-4">💻</div>
+
+                <h3 class="text-xl font-bold mb-3">
+                    Full Stack Development
+                </h3>
+
+                <p class="text-gray-600 mb-4">
+                    Learn frontend and backend technologies
+                    to build complete web applications.
+                </p>
+
+                <p class="font-semibold text-gray-700">
+                    Duration: 6 Months
+                </p>
+
+                <p class="text-blue-600 font-bold text-xl mt-2">
+                    ₹30,000
+                </p>
+
+                <button
+                    class="w-full mt-5 bg-blue-600 text-white py-2 rounded-lg
+                    hover:bg-blue-800 hover:scale-105
+                    transition duration-300">
+                    Enroll
+                </button>
+
+            </div>
+
+
+            <!-- Course 2 -->
+            <div
+                class="bg-white rounded-xl shadow-md p-6
+                hover:shadow-2xl hover:-translate-y-2
+                transition duration-300">
+
+                <div class="text-4xl mb-4">🐍</div>
+
+                <h3 class="text-xl font-bold mb-3">
+                    Python Development
+                </h3>
+
+                <p class="text-gray-600 mb-4">
+                    Learn Python programming and develop
+                    real-world applications.
+                </p>
+
+                <p class="font-semibold text-gray-700">
+                    Duration: 4 Months
+                </p>
+
+                <p class="text-green-600 font-bold text-xl mt-2">
+                    ₹20,000
+                </p>
+
+                <button
+                    class="w-full mt-5 bg-green-600 text-white py-2 rounded-lg
+                    hover:bg-green-800 hover:scale-105
+                    transition duration-300">
+                    Enroll
+                </button>
+
+            </div>
+
+
+            <!-- Course 3 -->
+            <div
+                class="bg-white rounded-xl shadow-md p-6
+                hover:shadow-2xl hover:-translate-y-2
+                transition duration-300">
+
+                <div class="text-4xl mb-4">⚛️</div>
+
+                <h3 class="text-xl font-bold mb-3">
+                    React Development
+                </h3>
+
+                <p class="text-gray-600 mb-4">
+                    Build modern and interactive user interfaces
+                    using React.
+                </p>
+
+                <p class="font-semibold text-gray-700">
+                    Duration: 3 Months
+                </p>
+
+                <p class="text-purple-600 font-bold text-xl mt-2">
+                    ₹18,000
+                </p>
+
+                <button
+                    class="w-full mt-5 bg-purple-600 text-white py-2 rounded-lg
+                    hover:bg-purple-800 hover:scale-105
+                    transition duration-300">
+                    Enroll
+                </button>
+
+            </div>
+
+
+            <!-- Course 4 -->
+            <div
+                class="bg-white rounded-xl shadow-md p-6
+                hover:shadow-2xl hover:-translate-y-2
+                transition duration-300">
+
+                <div class="text-4xl mb-4">🌐</div>
+
+                <h3 class="text-xl font-bold mb-3">
+                    Web Development
+                </h3>
+
+                <p class="text-gray-600 mb-4">
+                    Master HTML, CSS and JavaScript to create
+                    responsive websites.
+                </p>
+
+                <p class="font-semibold text-gray-700">
+                    Duration: 3 Months
+                </p>
+
+                <p class="text-orange-600 font-bold text-xl mt-2">
+                    ₹15,000
+                </p>
+
+                <button
+                    class="w-full mt-5 bg-orange-600 text-white py-2 rounded-lg
+                    hover:bg-orange-800 hover:scale-105
+                    transition duration-300">
+                    Enroll
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= TRAINERS ================= -->
+    <section id="trainers"
+        class="bg-white py-12 sm:py-16">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center mb-10">
+
+                <h2 class="text-3xl sm:text-4xl font-bold">
+                    Our Trainers
+                </h2>
+
+                <p class="text-gray-600 mt-3">
+                    Learn from experienced professionals.
+                </p>
+
+            </div>
+
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+
+                <!-- Trainer 1 -->
+                <div
+                    class="bg-gray-100 rounded-xl shadow-md p-6 text-center
+                    hover:shadow-2xl hover:-translate-y-2
+                    transition duration-300">
+
+                    <div class="text-6xl mb-4">
+                        👨‍💻
+                    </div>
+
+                    <h3 class="text-xl font-bold">
+                        Arun Kumar
+                    </h3>
+
+                    <p class="text-blue-600 font-semibold">
+                        Full Stack Developer
+                    </p>
+
+                    <p class="text-gray-600 mt-3">
+                        8+ years of development and teaching experience.
+                    </p>
+
+                </div>
+
+
+                <!-- Trainer 2 -->
+                <div
+                    class="bg-gray-100 rounded-xl shadow-md p-6 text-center
+                    hover:shadow-2xl hover:-translate-y-2
+                    transition duration-300">
+
+                    <div class="text-6xl mb-4">
+                        👩‍💻
+                    </div>
+
+                    <h3 class="text-xl font-bold">
+                        Priya Sharma
+                    </h3>
+
+                    <p class="text-purple-600 font-semibold">
+                        Python Developer
+                    </p>
+
+                    <p class="text-gray-600 mt-3">
+                        Experienced Python and Django instructor.
+                    </p>
+
+                </div>
+
+
+                <!-- Trainer 3 -->
+                <div
+                    class="bg-gray-100 rounded-xl shadow-md p-6 text-center
+                    hover:shadow-2xl hover:-translate-y-2
+                    transition duration-300">
+
+                    <div class="text-6xl mb-4">
+                        👨‍🏫
+                    </div>
+
+                    <h3 class="text-xl font-bold">
+                        Ravi Kumar
+                    </h3>
+
+                    <p class="text-green-600 font-semibold">
+                        Frontend Developer
+                    </p>
+
+                    <p class="text-gray-600 mt-3">
+                        Specialist in HTML, CSS, JavaScript and React.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= WHY CHOOSE US ================= -->
+    <section id="why-us"
+        class="bg-blue-50 py-12 sm:py-16">
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center mb-10">
+
+                <h2 class="text-3xl sm:text-4xl font-bold">
+                    Why Choose Us?
+                </h2>
+
+                <p class="text-gray-600 mt-3">
+                    Everything you need to start your development career.
+                </p>
+
+            </div>
+
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md text-center
+                    hover:shadow-xl hover:scale-105 transition duration-300">
+
+                    <div class="text-4xl mb-4">🎯</div>
+
+                    <h3 class="font-bold text-xl">
+                        Practical Learning
+                    </h3>
+
+                    <p class="text-gray-600 mt-2">
+                        Learn through projects and practical exercises.
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md text-center
+                    hover:shadow-xl hover:scale-105 transition duration-300">
+
+                    <div class="text-4xl mb-4">👨‍🏫</div>
+
+                    <h3 class="font-bold text-xl">
+                        Expert Trainers
+                    </h3>
+
+                    <p class="text-gray-600 mt-2">
+                        Learn from experienced industry professionals.
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md text-center
+                    hover:shadow-xl hover:scale-105 transition duration-300">
+
+                    <div class="text-4xl mb-4">📚</div>
+
+                    <h3 class="font-bold text-xl">
+                        Updated Content
+                    </h3>
+
+                    <p class="text-gray-600 mt-2">
+                        Learn modern tools and technologies.
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md text-center
+                    hover:shadow-xl hover:scale-105 transition duration-300">
+
+                    <div class="text-4xl mb-4">💼</div>
+
+                    <h3 class="font-bold text-xl">
+                        Career Support
+                    </h3>
+
+                    <p class="text-gray-600 mt-2">
+                        Get guidance to prepare for your career.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact"
+        class="bg-gray-200 py-12 sm:py-16">
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center mb-8">
+
+                <h2 class="text-3xl sm:text-4xl font-bold">
+                    Contact Us
+                </h2>
+
+                <p class="text-gray-600 mt-3">
+                    Have questions? Get in touch with us.
+                </p>
+
+            </div>
+
+
+            <div
+                class="bg-white rounded-xl shadow-lg p-6 sm:p-8">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                    <div>
+                        <label class="block font-semibold mb-2">
+                            Name
+                        </label>
+
+                        <input
+                            type="text"
+                            placeholder="Enter your name"
+                            class="w-full border border-gray-300 rounded-lg px-4 py-3
+                            focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+
+
+                    <div>
+                        <label class="block font-semibold mb-2">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            placeholder="Enter your email"
+                            class="w-full border border-gray-300 rounded-lg px-4 py-3
+                            focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+
+                </div>
+
+
+                <div class="mt-6">
+
+                    <label class="block font-semibold mb-2">
+                        Message
+                    </label>
+
+                    <textarea
+                        rows="4"
+                        placeholder="Enter your message"
+                        class="w-full border border-gray-300 rounded-lg px-4 py-3
+                        focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+
+                </div>
+
+
+                <button
+                    class="mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg
+                    hover:bg-blue-800 hover:scale-105
+                    transition duration-300">
+                    Send Message
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-gray-900 text-white text-center py-6">
+
+        <p>
+            © 2026 CodeMaster Academy. All Rights Reserved.
+        </p>
+
+        <p class="text-gray-400 text-sm mt-2">
+            Learn. Build. Grow.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

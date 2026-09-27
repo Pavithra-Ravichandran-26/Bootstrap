@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Simple Navbar</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navbarBlue: "#1D4ED8",
+                        navbarDark: "#1E3A8A"
+                    },
+
+                    fontSize: {
+                        nav: "18px"
+                    },
+
+                    spacing: {
+                        navspace: "28px"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-navbarBlue text-white px-6 py-4">
+
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+
+            <!-- Logo -->
+            <h1 class="text-2xl font-bold">
+                MyWebsite
+            </h1>
+
+            <!-- Navigation Links -->
+            <div class="flex items-center gap-navspace">
+
+                <a href="#home"
+                    class="text-nav font-semibold hover:text-yellow-300 transition duration-300">
+                    Home
+                </a>
+
+                <a href="#about"
+                    class="text-nav font-semibold hover:text-yellow-300 transition duration-300">
+                    About
+                </a>
+
+                <a href="#services"
+                    class="text-nav font-semibold hover:text-yellow-300 transition duration-300">
+                    Services
+                </a>
+
+                <a href="#contact"
+                    class="text-nav font-semibold hover:text-yellow-300 transition duration-300">
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center">
+
+        <div class="text-center">
+
+            <h2 class="text-4xl font-bold text-gray-800">
+                Welcome to My Website
+            </h2>
+
+           
+        </div>
+
+    </section>
+
+</body>
+
+</html>
+

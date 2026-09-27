@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Custom Profile Card</title>
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        profileBlue: "#2563EB",
+                        profileLight: "#EFF6FF"
+                    },
+
+                    fontFamily: {
+                        profile: ["Poppins", "sans-serif"]
+                    },
+
+                    borderRadius: {
+                        profile: "25px"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-profileLight font-profile min-h-screen flex items-center justify-center p-6">
+
+    <!-- Profile Card -->
+    <div
+        class="bg-white rounded-profile shadow-xl max-w-sm w-full p-8 text-center border-2 border-profileBlue hover:shadow-2xl transition duration-300">
+
+        <!-- Profile Image -->
+        <div
+            class="w-28 h-28 mx-auto bg-profileLight rounded-full flex items-center justify-center text-6xl mb-5">
+            👩‍💻
+        </div>
+
+        <!-- Name -->
+        <h1 class="text-2xl font-bold text-gray-800">
+            Pavithra Ravichandran
+        </h1>
+
+        <!-- Job Title -->
+        <h2 class="text-profileBlue font-semibold mt-2">
+            AI Python Full Stack Developer
+        </h2>
+
+        <!-- Description -->
+        <p class="text-gray-600 text-sm leading-6 mt-4">
+            Beginner full stack developer learning HTML, CSS,
+            JavaScript, Tailwind CSS, Python, Django, React and MySQL.
+        </p>
+
+        <!-- Button -->
+        <button
+            class="mt-6 bg-profileBlue text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-800 transition duration-300">
+            View Profile
+        </button>
+
+    </div>
+
+</body>
+
+</html>
+

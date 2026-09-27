@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Card</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#7C3AED"
+                    },
+
+                    boxShadow: {
+                        product: "0 10px 30px rgba(124, 58, 237, 0.25)"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-6">
+
+    <!-- Product Card -->
+    <div
+        class="bg-white w-full max-w-sm rounded-2xl shadow-product overflow-hidden hover:scale-105 transition duration-300">
+
+        <!-- Product Image -->
+        <img
+            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80"
+            alt="Running Shoes"
+            class="w-full h-56 object-cover">
+
+        <!-- Product Details -->
+        <div class="p-6">
+
+            <p class="text-primary font-semibold text-sm uppercase">
+                Sports
+            </p>
+
+            <h1 class="text-2xl font-bold text-gray-800 mt-2">
+                Running Shoes
+            </h1>
+
+            <p class="text-gray-600 mt-3 leading-6">
+                Comfortable and stylish running shoes designed
+                for everyday workouts and outdoor activities.
+            </p>
+
+            <!-- Price -->
+            <div class="flex items-center justify-between mt-5">
+
+                <span class="text-2xl font-bold text-primary">
+                    ₹2,499
+                </span>
+
+                <span class="text-gray-400 line-through">
+                    ₹3,499
+                </span>
+
+            </div>
+
+            <!-- Button -->
+            <button
+                class="w-full mt-6 bg-primary text-white py-3 rounded-lg font-semibold hover:bg-purple-800 transition duration-300">
+                Buy Now
+            </button>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+

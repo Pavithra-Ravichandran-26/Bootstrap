@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Super Shop</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+
+<body class="bg-gray-100">
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="bg-gray-900 text-white sticky top-0 z-50">
+
+        <div class="max-w-7xl mx-auto p-4">
+
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+
+                <!-- Logo -->
+
+                <a href="#home"
+                   class="text-2xl font-bold text-center md:text-left">
+
+                    🛍️ Super Shop
+
+                </a>
+
+
+                <!-- Navigation -->
+
+                <div class="flex flex-wrap justify-center gap-5 mt-4 md:mt-0">
+
+                    <a href="#home"
+                       class="hover:text-blue-400 transition duration-300">
+                        Home
+                    </a>
+
+                    <a href="#products"
+                       class="hover:text-blue-400 transition duration-300">
+                        Products
+                    </a>
+
+                    <a href="#about"
+                       class="hover:text-blue-400 transition duration-300">
+                        About
+                    </a>
+
+                    <a href="#contact"
+                       class="hover:text-blue-400 transition duration-300">
+                        Contact
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= HOME ================= -->
+
+    <section id="home"
+             class="bg-blue-600 text-white text-center p-12 md:p-16">
+
+        <div class="max-w-4xl mx-auto">
+
+            <h1 class="text-4xl md:text-5xl font-bold">
+                Welcome to Super Shop 🛍️
+            </h1>
+
+            <p class="text-lg md:text-xl mt-5">
+                Discover quality products at affordable prices.
+            </p>
+
+            <a href="#products"
+               class="inline-block bg-white text-blue-600 px-6 py-3 rounded-lg
+                      font-semibold mt-6 hover:bg-gray-200 transition duration-300">
+
+                Shop Now
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <section id="products"
+             class="max-w-7xl mx-auto px-5 py-12">
+
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800">
+            Our Products
+        </h2>
+
+        <p class="text-center text-gray-600 mt-3 mb-10">
+            Explore our collection of popular products.
+        </p>
+
+
+        <!-- RESPONSIVE GRID -->
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+
+            <!-- PRODUCT 1 -->
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+
+                <img
+                    src="https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+                    alt="Running Shoes"
+                    class="w-full h-56 object-cover">
+
+                <div class="p-5">
+
+                    <h3 class="text-xl font-bold text-gray-800">
+                        Running Shoes
+                    </h3>
+
+                    <p class="text-gray-600 mt-2">
+                        Comfortable and lightweight shoes for everyday running.
+                    </p>
+
+                    <p class="text-2xl font-bold text-green-600 mt-4">
+                        ₹2,499
+                    </p>
+
+                    <button
+                        class="bg-blue-600 text-white px-5 py-2 rounded-lg mt-4
+                               hover:bg-blue-800 transition duration-300">
+
+                        Buy Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 2 -->
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+
+                <img
+                    src="https://images.unsplash.com/photo-1546868871-7041f2a55e12"
+                    alt="Smart Watch"
+                    class="w-full h-56 object-cover">
+
+                <div class="p-5">
+
+                    <h3 class="text-xl font-bold text-gray-800">
+                        Smart Watch
+                    </h3>
+
+                    <p class="text-gray-600 mt-2">
+                        Track your fitness, steps and daily activities.
+                    </p>
+
+                    <p class="text-2xl font-bold text-green-600 mt-4">
+                        ₹3,999
+                    </p>
+
+                    <button
+                        class="bg-blue-600 text-white px-5 py-2 rounded-lg mt-4
+                               hover:bg-blue-800 transition duration-300">
+
+                        Buy Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 3 -->
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+
+                <img
+                    src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+                    alt="Wireless Headphones"
+                    class="w-full h-56 object-cover">
+
+                <div class="p-5">
+
+                    <h3 class="text-xl font-bold text-gray-800">
+                        Wireless Headphones
+                    </h3>
+
+                    <p class="text-gray-600 mt-2">
+                        Enjoy clear sound with comfortable wireless headphones.
+                    </p>
+
+                    <p class="text-2xl font-bold text-green-600 mt-4">
+                        ₹2,999
+                    </p>
+
+                    <button
+                        class="bg-blue-600 text-white px-5 py-2 rounded-lg mt-4
+                               hover:bg-blue-800 transition duration-300">
+
+                        Buy Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 4 -->
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+
+                <img
+                    src="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
+                    alt="Classic Watch"
+                    class="w-full h-56 object-cover">
+
+                <div class="p-5">
+
+                    <h3 class="text-xl font-bold text-gray-800">
+                        Classic Watch
+                    </h3>
+
+                    <p class="text-gray-600 mt-2">
+                        Elegant and stylish watch suitable for every occasion.
+                    </p>
+
+                    <p class="text-2xl font-bold text-green-600 mt-4">
+                        ₹1,899
+                    </p>
+
+                    <button
+                        class="bg-blue-600 text-white px-5 py-2 rounded-lg mt-4
+                               hover:bg-blue-800 transition duration-300">
+
+                        Buy Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 5 -->
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+
+                <img
+                    src="https://www.bing.com/th?id=OPAC.dXAoPq4kNPRU4g474C474&o=5&pid=21.1&w=140&h=140&rs=1&qlt=100&dpr=1.5&o=2"
+                    alt="laptop"
+                    class="w-full h-56 object-cover">
+
+                <div class="p-5">
+
+                    <h3 class="text-xl font-bold text-gray-800">
+                        Laptop
+                    </h3>
+
+                    <p class="text-gray-600 mt-2">
+                       Responsive, with powerful performance
+
+Engineered with military-grade quality, the IdeaPad Slim 3i Gen 8 laptop is ideal for on-the-go work, school, or entertainment. Powered by up to 13th Gen Intel® Core™ processors, this 39.62cms (15.6) device boasts speedy responsiveness for all your apps—so you can multitask to your heart’s content. Plus, huge amounts of storage mean you can save your entire multimedia library on your PC without compromise.
+                    </p>
+
+                    <p class="text-2xl font-bold text-green-600 mt-4">
+                        ₹61,990
+                    </p>
+
+                    <button
+                        class="bg-blue-600 text-white px-5 py-2 rounded-lg mt-4
+                               hover:bg-blue-800 transition duration-300">
+
+                        Buy Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 6 -->
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+
+                <img
+                    src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f"
+                    alt="Digital Camera"
+                    class="w-full h-56 object-cover">
+
+                <div class="p-5">
+
+                    <h3 class="text-xl font-bold text-gray-800">
+                        Digital Camera
+                    </h3>
+
+                    <p class="text-gray-600 mt-2">
+                        Capture beautiful moments with this digital camera.
+                    </p>
+
+                    <p class="text-2xl font-bold text-green-600 mt-4">
+                        ₹24,999
+                    </p>
+
+                    <button
+                        class="bg-blue-600 text-white px-5 py-2 rounded-lg mt-4
+                               hover:bg-blue-800 transition duration-300">
+
+                        Buy Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about"
+             class="bg-white py-12 md:py-16">
+
+        <div class="max-w-5xl mx-auto px-5">
+
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800">
+                About Super Shop
+            </h2>
+
+            <div class="mt-8 text-center">
+
+                <p class="text-gray-600 text-lg leading-relaxed">
+                    Super Shop is an online shopping platform that offers
+                    a wide range of quality products at affordable prices.
+                    Our goal is to provide customers with a simple,
+                    convenient and enjoyable shopping experience.
+                </p>
+
+                <p class="text-gray-600 text-lg leading-relaxed mt-5">
+                    From fashion and accessories to electronics and
+                    lifestyle products, we bring useful products together
+                    in one place.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact"
+             class="bg-gray-200 py-12 md:py-16">
+
+        <div class="max-w-4xl mx-auto px-5">
+
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800">
+                Contact Us
+            </h2>
+
+            <p class="text-center text-gray-600 mt-3">
+                Have a question? We'd love to hear from you.
+            </p>
+
+
+            <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 mt-8">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                    <!-- Contact Information -->
+
+                    <div>
+
+                        <h3 class="text-xl font-bold text-gray-800">
+                            Get In Touch
+                        </h3>
+
+                        <p class="text-gray-600 mt-4">
+                            📧 Email: support@supershop.com
+                        </p>
+
+                        <p class="text-gray-600 mt-3">
+                            📞 Phone: +91 98765 43210
+                        </p>
+
+                        <p class="text-gray-600 mt-3">
+                            📍 Location: Hosur, Tamil Nadu
+                        </p>
+
+                    </div>
+
+
+                    <!-- Contact Form -->
+
+                    <div>
+
+                        <input
+                            type="text"
+                            placeholder="Your Name"
+                            class="w-full border border-gray-300 rounded-lg p-3
+                                   focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+                        <input
+                            type="email"
+                            placeholder="Your Email"
+                            class="w-full border border-gray-300 rounded-lg p-3 mt-4
+                                   focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+                        <textarea
+                            placeholder="Your Message"
+                            rows="4"
+                            class="w-full border border-gray-300 rounded-lg p-3 mt-4
+                                   focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+
+                        <button
+                            class="bg-blue-600 text-white px-6 py-3 rounded-lg mt-4
+                                   hover:bg-blue-800 transition duration-300">
+
+                            Send Message
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="bg-gray-900 text-white text-center p-5">
+
+        <p>
+            © 2026 Super Shop | Tailwind CSS
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
+

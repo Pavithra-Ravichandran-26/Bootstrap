@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+
+   
+
+    <header class="block lg:hidden bg-gray-900 text-white p-4">
+
+        <div class="flex items-center justify-between">
+
+            <h1 class="text-xl sm:text-2xl font-bold">
+                📊 Admin Dashboard
+            </h1>
+
+            <span class="text-2xl">
+                ☰
+            </span>
+
+        </div>
+
+    </header>
+
+
+   
+
+    <div class="flex min-h-screen">
+
+
+
+        <aside
+            class="hidden lg:block w-64 bg-gray-900 text-white min-h-screen">
+
+            <div class="p-6">
+
+                <h2 class="text-2xl font-bold text-blue-400">
+                    🎓 CodeMaster
+                </h2>
+
+                <p class="text-gray-400 text-sm mt-1">
+                    Admin Panel
+                </p>
+
+            </div>
+
+
+            <!-- Sidebar Navigation -->
+
+            <nav class="px-4 space-y-2">
+
+                <a href="#"
+                    class="block bg-blue-600 rounded-lg px-4 py-3
+                    hover:bg-blue-700 transition duration-300">
+                    📊 Dashboard
+                </a>
+
+                <a href="#"
+                    class="block rounded-lg px-4 py-3
+                    hover:bg-gray-700 transition duration-300">
+                    👨‍🎓 Students
+                </a>
+
+                <a href="#"
+                    class="block rounded-lg px-4 py-3
+                    hover:bg-gray-700 transition duration-300">
+                    📚 Courses
+                </a>
+
+                <a href="#"
+                    class="block rounded-lg px-4 py-3
+                    hover:bg-gray-700 transition duration-300">
+                    👨‍🏫 Trainers
+                </a>
+
+                <a href="#"
+                    class="block rounded-lg px-4 py-3
+                    hover:bg-gray-700 transition duration-300">
+                    💻 Projects
+                </a>
+
+                <a href="#"
+                    class="block rounded-lg px-4 py-3
+                    hover:bg-gray-700 transition duration-300">
+                    ⚙️ Settings
+                </a>
+
+            </nav>
+
+
+            <!-- Sidebar Bottom -->
+
+            <div class="absolute bottom-0 w-64 p-4">
+
+                <div class="border-t border-gray-700 pt-4">
+
+                    <p class="text-sm text-gray-400">
+                        Logged in as
+                    </p>
+
+                    <p class="font-semibold">
+                        Admin
+                    </p>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+       
+
+        <main class="flex-1 p-4 sm:p-6 md:p-8 lg:p-10">
+
+
+          
+
+            <div class="hidden lg:flex items-center justify-between mb-8">
+
+                <div>
+
+                    <h1 class="text-3xl font-bold">
+                        Dashboard
+                    </h1>
+
+                    <p class="text-gray-500 mt-1">
+                        Welcome back, Admin!
+                    </p>
+
+                </div>
+
+
+                <div class="flex items-center gap-4">
+
+                    <span class="text-gray-600">
+                        🔔
+                    </span>
+
+                    <div
+                        class="w-10 h-10 bg-blue-600 text-white
+                        rounded-full flex items-center justify-center
+                        font-bold">
+                        A
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="lg:hidden mb-6">
+
+                <h2 class="text-2xl sm:text-3xl font-bold">
+                    Dashboard
+                </h2>
+
+                <p class="text-gray-500 mt-1">
+                    Welcome back, Admin!
+                </p>
+
+            </div>
+
+
+         
+
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4
+                gap-4 sm:gap-6">
+
+
+                <!-- Total Students -->
+
+                <div
+                    class="bg-white rounded-xl shadow-md p-5 sm:p-6
+                    border-l-4 border-blue-500
+                    hover:shadow-xl hover:-translate-y-1
+                    transition duration-300">
+
+                    <div class="flex items-center justify-between">
+
+                        <div>
+
+                            <p class="text-gray-500 text-sm">
+                                Total Students
+                            </p>
+
+                            <h3 class="text-3xl font-bold mt-2">
+                                1,250
+                            </h3>
+
+                            <p class="text-green-600 text-sm mt-2">
+                                ↑ 12% this month
+                            </p>
+
+                        </div>
+
+                        <div class="text-4xl">
+                            👨‍🎓
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            
+
+                <div
+                    class="bg-white rounded-xl shadow-md p-5 sm:p-6
+                    border-l-4 border-green-500
+                    hover:shadow-xl hover:-translate-y-1
+                    transition duration-300">
+
+                    <div class="flex items-center justify-between">
+
+                        <div>
+
+                            <p class="text-gray-500 text-sm">
+                                Total Courses
+                            </p>
+
+                            <h3 class="text-3xl font-bold mt-2">
+                                48
+                            </h3>
+
+                            <p class="text-green-600 text-sm mt-2">
+                                ↑ 5 new courses
+                            </p>
+
+                        </div>
+
+                        <div class="text-4xl">
+                            📚
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+               
+
+                <div
+                    class="bg-white rounded-xl shadow-md p-5 sm:p-6
+                    border-l-4 border-purple-500
+                    hover:shadow-xl hover:-translate-y-1
+                    transition duration-300">
+
+                    <div class="flex items-center justify-between">
+
+                        <div>
+
+                            <p class="text-gray-500 text-sm">
+                                Total Trainers
+                            </p>
+
+                            <h3 class="text-3xl font-bold mt-2">
+                                32
+                            </h3>
+
+                            <p class="text-green-600 text-sm mt-2">
+                                ↑ 3 new trainers
+                            </p>
+
+                        </div>
+
+                        <div class="text-4xl">
+                            👨‍🏫
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            
+
+                <div
+                    class="bg-white rounded-xl shadow-md p-5 sm:p-6
+                    border-l-4 border-orange-500
+                    hover:shadow-xl hover:-translate-y-1
+                    transition duration-300">
+
+                    <div class="flex items-center justify-between">
+
+                        <div>
+
+                            <p class="text-gray-500 text-sm">
+                                Completed Projects
+                            </p>
+
+                            <h3 class="text-3xl font-bold mt-2">
+                                326
+                            </h3>
+
+                            <p class="text-green-600 text-sm mt-2">
+                                ↑ 18 completed
+                            </p>
+
+                        </div>
+
+                        <div class="text-4xl">
+                            💻
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================================================= -->
+            <!-- RECENT ACTIVITY -->
+            <!-- ================================================= -->
+
+            <section class="mt-8">
+
+                <div
+                    class="bg-white rounded-xl shadow-md overflow-hidden">
+
+                    <!-- Section Header -->
+
+                    <div
+                        class="p-5 sm:p-6 border-b border-gray-200
+                        flex flex-col sm:flex-row
+                        sm:items-center sm:justify-between gap-3">
+
+                        <div>
+
+                            <h2 class="text-xl sm:text-2xl font-bold">
+                                Recent Activity
+                            </h2>
+
+                            <p class="text-gray-500 text-sm mt-1">
+                                Latest updates from your platform
+                            </p>
+
+                        </div>
+
+                        <button
+                            class="bg-blue-600 text-white px-4 py-2
+                            rounded-lg text-sm
+                            hover:bg-blue-800
+                            transition duration-300">
+
+                            View All
+
+                        </button>
+
+                    </div>
+
+
+                    
+                    <div class="overflow-x-auto">
+
+                        <table class="w-full min-w-[700px]">
+
+                            <thead class="bg-gray-50">
+
+                                <tr>
+
+                                    <th
+                                        class="text-left px-5 py-4
+                                        text-sm font-semibold">
+                                        Student
+                                    </th>
+
+                                    <th
+                                        class="text-left px-5 py-4
+                                        text-sm font-semibold">
+                                        Activity
+                                    </th>
+
+                                    <th
+                                        class="text-left px-5 py-4
+                                        text-sm font-semibold">
+                                        Course
+                                    </th>
+
+                                    <th
+                                        class="text-left px-5 py-4
+                                        text-sm font-semibold">
+                                        Date
+                                    </th>
+
+                                    <th
+                                        class="text-left px-5 py-4
+                                        text-sm font-semibold">
+                                        Status
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody class="divide-y divide-gray-200">
+
+
+                                <!-- Row 1 -->
+
+                                <tr class="hover:bg-gray-50">
+
+                                    <td class="px-5 py-4">
+                                        Pavithra
+                                    </td>
+
+                                    <td class="px-5 py-4">
+                                        Completed Project
+                                    </td>
+
+                                    <td class="px-5 py-4">
+                                        Full Stack
+                                    </td>
+
+                                    <td class="px-5 py-4 text-gray-500">
+                                        Today
+                                    </td>
+
+                                    <td class="px-5 py-4">
+
+                                        <span
+                                            class="bg-green-100 text-green-700
+                                            px-3 py-1 rounded-full text-sm">
+                                            Completed
+                                        </span>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- Row 2 -->
+
+                                <tr class="hover:bg-gray-50">
+
+                                    <td class="px-5 py-4">
+                                        Arun
+                                    </td>
+
+                                    <td class="px-5 py-4">
+                                        Enrolled Course
+                                    </td>
+
+                                    <td class="px-5 py-4">
+                                        Python
+                                    </td>
+
+                                    <td class="px-5 py-4 text-gray-500">
+                                        Yesterday
+                                    </td>
+
+                                    <td class="px-5 py-4">
+
+                                        <span
+                                            class="bg-blue-100 text-blue-700
+                                            px-3 py-1 rounded-full text-sm">
+                                            Active
+                                        </span>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- Row 3 -->
+
+                                <tr class="hover:bg-gray-50">
+
+                                    <td class="px-5 py-4">
+                                        Priya
+                                    </td>
+
+                                    <td class="px-5 py-4">
+                                        Submitted Assignment
+                                    </td>
+
+                                    <td class="px-5 py-4">
+                                        React
+                                    </td>
+
+                                    <td class="px-5 py-4 text-gray-500">
+                                        Sep 26
+                                    </td>
+
+                                    <td class="px-5 py-4">
+
+                                        <span
+                                            class="bg-yellow-100 text-yellow-700
+                                            px-3 py-1 rounded-full text-sm">
+                                            Pending
+                                        </span>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- Row 4 -->
+
+                                <tr class="hover:bg-gray-50">
+
+                                    <td class="px-5 py-4">
+                                        Rahul
+                                    </td>
+
+                                    <td class="px-5 py-4">
+                                        Completed Course
+                                    </td>
+
+                                    <td class="px-5 py-4">
+                                        Web Development
+                                    </td>
+
+                                    <td class="px-5 py-4 text-gray-500">
+                                        Sep 25
+                                    </td>
+
+                                    <td class="px-5 py-4">
+
+                                        <span
+                                            class="bg-green-100 text-green-700
+                                            px-3 py-1 rounded-full text-sm">
+                                            Completed
+                                        </span>
+
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+          
+
+            <section class="mt-8">
+
+                <h2 class="text-xl sm:text-2xl font-bold mb-5">
+                    Quick Actions
+                </h2>
+
+
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-2
+                    lg:grid-cols-4 gap-4">
+
+
+                    <button
+                        class="bg-blue-600 text-white p-4 rounded-xl
+                        hover:bg-blue-800 transition duration-300">
+
+                        ➕ Add Student
+
+                    </button>
+
+
+                    <button
+                        class="bg-green-600 text-white p-4 rounded-xl
+                        hover:bg-green-800 transition duration-300">
+
+                        📚 Add Course
+
+                    </button>
+
+
+                    <button
+                        class="bg-purple-600 text-white p-4 rounded-xl
+                        hover:bg-purple-800 transition duration-300">
+
+                        👨‍🏫 Add Trainer
+
+                    </button>
+
+
+                    <button
+                        class="bg-orange-600 text-white p-4 rounded-xl
+                        hover:bg-orange-800 transition duration-300">
+
+                        💻 View Projects
+
+                    </button>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+  
+
+    <footer class="bg-gray-900 text-white text-center py-5">
+
+        <p class="text-sm">
+            © 2026 CodeMaster Academy Admin Dashboard
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
+
